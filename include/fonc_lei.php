@@ -1,4 +1,5 @@
-<?php 
+<?php
+// Fichier a modifier 
 function stat_lei()
 {
 	$tab = array(0,0,0,0);
@@ -385,7 +386,7 @@ function import($nump)
 
 			if( empty($COMMENTAIRE) AND empty($COMMENTAIREL1) AND empty($COMMENTAIREL2) )
 			{
-				etat('Description vide, Evenement supprimÃ'); 
+				etat('Description vide, Evenement supprimï¿½'); 
 				$pas_pb = FALSE;
 			}
 
