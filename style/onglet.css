@@ -1,0 +1,51 @@
+.og_titre
+{
+	border:0px;
+	background-color: #fff;
+	cursor: pointer;
+	border-bottom:none;
+	margin-right:4px; 
+	padding:7px; 
+	-o-transition:.4s;
+	-ms-transition:.4s;
+	-moz-transition:.4s;
+	-webkit-transition:.4s;
+	transition:.4s;
+}
+
+.og_titre:hover
+{
+	background-color: #B3CDE5;
+	border-top-right-radius:2px;
+	border-top-left-radius:2px;
+}
+
+.active_titre{
+	/* background-color: #F9F9F9 !important; */
+	color: #fff;
+	background-color: #499CE5 !important;
+	border-top-right-radius:2px;
+	border-top-left-radius:2px;
+}
+
+.og_titre label{
+	cursor: pointer;
+}
+
+.og_titre input{
+	display: none;
+}
+
+.og_page{
+	border:0px;
+	background-color: #fff;
+	padding:10px; 
+            overflow:hidden;
+	border-top: #499CE5 solid 2px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	
+	border-bottom-right-radius:2px;
+	border-bottom-left-radius:2px;
+}

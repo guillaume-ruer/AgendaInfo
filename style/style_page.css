@@ -1,0 +1,46 @@
+ul
+{
+	float:left;
+
+}
+
+#texte_description strong
+{
+	font-weight:normal;
+}
+
+.texte_gros
+{
+	font-size:120%; 
+}
+
+.date_active
+{
+	background-color:#7777FF;
+}
+
+th
+{
+	padding:5px;
+}
+
+td
+{
+	padding:3px;
+}
+
+table
+{
+	border-spacing:3px 5px; 
+}
+
+.chiffre
+{
+    background-color:#DDDDFF; 
+    width:10px;
+    text-align:center;
+}
+
+#bl_event
+{
+}

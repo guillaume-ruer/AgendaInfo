@@ -1,0 +1,20 @@
+.edite
+{
+	cursor:pointer; 
+}
+
+.message_flottant
+{
+	background:white;
+	cursor:pointer;
+}
+
+.xform_annuler
+{
+	background:#ff9b9b;
+}
+
+.xform_valider
+{
+	background:#9bffac;
+}

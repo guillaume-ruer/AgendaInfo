@@ -1,0 +1,78 @@
+
+body
+{
+	background-color:#ffffff;
+}
+
+#liste_evenement hr
+{
+	color:#000;
+	background-color:#af294e;
+	height:1px;
+	border:none;
+}
+
+.symbole
+
+{
+
+	margin: 2px;
+}
+
+#ladate
+{
+	color: #666666;
+	font-weight: bold;
+}
+
+#filtre, #annonce
+{
+	background-color:#eadbc4;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:10px;
+}
+
+.pagination
+{
+	background-color:#efefef;
+	color: #af294e;  
+	font-weight:bold;
+}
+
+.pagination a
+{
+	color: #000000;
+}
+
+.pagination .actif
+{
+
+	text-decoration:none;
+}
+
+.pagination .inactif:hover
+{
+	color: #000000;  
+
+}
+
+#liste_evenement a
+{
+	color:#af294e;
+}
+
+#liste_evenement a:hover
+{
+	color:#000000;
+}
+
+.event_date a
+{
+	font-weight:bold;
+}
+
+.event_contact 
+{
+	color:#927339;
+}

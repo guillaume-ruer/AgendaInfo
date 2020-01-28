@@ -1,0 +1,2 @@
+SetEnv PHP_VER 5
+deny from all

@@ -1,0 +1,115 @@
+
+body
+{
+	/* Couleur du fond */
+	background-color: #E3E3E3;
+}
+
+/*
+	Style de la barre de sépération 
+*/
+
+#liste_evenement hr
+{
+	
+	color:#aba8a8;
+	background-color:#aba8a8;
+}
+/*
+	Style de la barre de la date eu haut  
+*/
+
+#ladate
+{
+	color: #020100;
+}
+/*
+	Style du bloc contenant le formulaire de filtrage  
+*/
+#filtre
+{
+	background-color: #FFFFFF;
+
+}
+/*
+	Style des bloc de pagination (couleur du fond et du text )
+*/
+.pagination
+{
+	color: #922525;
+	background-color: #FFFFFF;
+	font-weight:bold;
+}
+/*
+	Style des liens de pagination 
+*/
+.pagination a
+{
+	
+	color: #922525;
+}
+
+/*
+	Style du lien de pagination actuelle 
+*/
+.pagination .actif
+{
+	color: #922525;
+	text-decoration:none;
+}
+
+/*
+	Style au survole des liens de paginations
+*/
+
+.pagination .inactif:hover
+{
+	color: #8aa82e;
+}
+/*
+	Style des liens présent dans les evenements. 
+*/
+#liste_evenement a
+{
+	color: #922525;
+}
+/*
+	Style au survole des liens présents dans les évenements.
+*/
+#liste_evenement a:hover
+{
+	color: #ffffff;
+}
+/*
+	Style des liens présent dans le bandeau titre des evenements
+*/
+.event_date a
+{
+	font-weight:bold;
+}
+
+.event_date
+{
+}
+/*
+	Style des contacts 
+*/
+.event_contact 
+{
+	color: #837e6a;
+
+}
+/*
+	Style du bloc du bas avec les annonces 
+*/
+#annonce
+{
+	text-align:center;
+	background-color: #ecdfaa;
+	padding:5px;
+}
+
+#annonce img
+{
+	border:none;
+}

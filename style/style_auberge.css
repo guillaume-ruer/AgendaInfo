@@ -1,0 +1,100 @@
+
+body
+{
+	background-color: #dc7a77;
+	font-size:1em;
+}
+
+#liste_evenement hr
+{
+	color:#000000;
+	background-color:#000000;
+	height:1px;
+	border:none;
+	width:50%;
+	text-align:left;
+	margin: 0 auto 0 0;
+}
+
+#ladate
+{
+	color: #FFFFFF;
+}
+
+#filtre
+{
+
+	background-color: #ffff66;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:10px;
+}
+
+.contient_pagin
+{
+	margin-top:10px;
+}
+.pagination
+{
+
+	color:white;
+	font-weight:bold;
+
+}
+
+.pagination a
+{
+	color: #000000;  
+}
+
+.pagination .actif
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.pagination .inactif:hover
+{
+	text-decoration:none;
+
+}
+#liste_evenement
+{
+	color:#FFFFFF;
+}
+.event_date
+{
+	margin-top:10px;
+	color: #901d1a;
+}
+
+#liste_evenement a
+{
+	color: #000000;
+}
+
+#liste_evenement a:hover
+{
+	text-decoration:none;
+}
+
+.event_date a
+{
+	font-weight:bold;
+}
+
+.event_contact 
+{
+	color: #901d1a;
+}
+
+#annonce
+{
+	text-align:center;
+	padding:5px;
+}
+
+#annonce img
+{
+	border:none;
+}

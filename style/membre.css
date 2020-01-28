@@ -1,0 +1,54 @@
+body
+{
+	margin:auto;
+	width:100%;
+}
+
+#alignement
+{
+	text-align:center;
+}
+
+#nouvelle
+{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	box-shadow: 0 1px 1px rgba(0,0,0,.25);
+	border-radius: 8px 8px 8px 8px;
+	background-color: rgba(209, 106, 61, 1);
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#nouvelle hr
+{
+	background-color: #ca5521;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #ca5521;
+	border-right-color: #ca5521;
+	border-bottom-color: #ca5521;
+	border-left-color: #ca5521;
+}
+
+#proposition, #rapport_bug
+{
+	border:1px solid black;
+	float:right;
+}
+
+#entrer {
+	box-shadow: 0 1px 1px rgba(0,0,0,.25);
+	border-radius: 8px 8px 8px 8px;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 5px;
+	width:50%;
+	margin-right: auto;
+	margin-left: auto;
+		margin-bottom: 10px;
+}
+

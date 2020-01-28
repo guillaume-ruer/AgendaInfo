@@ -1,0 +1,50 @@
+.actif
+{
+	background:#AAFFFF;
+}
+
+.inactif
+{
+	background:#FFAAFF; 
+}
+
+.attente
+{
+	background:#FFFFAA; 
+}
+
+td
+{
+	padding:3px; 
+	
+}
+
+.ajt-facture-form
+{
+	display:none; 
+	border:1px solid black;
+	border-radius:10px; 
+	padding:4px; 
+}
+
+.bl-infos
+{
+	background:white; 
+	padding:5px; 
+}
+
+label
+{
+	cursor:pointer; 
+}
+
+#str-table tbody tr td:nth-child(5)
+{
+	text-align:right;
+}
+
+.evidence
+{
+	color:red;
+	font-weight:bold; 
+}

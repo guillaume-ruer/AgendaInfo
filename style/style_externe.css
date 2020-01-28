@@ -1,0 +1,158 @@
+/*
+	Design général
+*/
+
+body
+{
+	font-size:12px;
+	font-family : arial, verdana, sans-serif;
+}
+
+#liste_evenement hr
+{
+	height:1px;
+	border:none;
+}
+
+/*
+	bandeau supérieur 
+*/ 
+
+#bloc_drapeau 
+{
+	float:right;
+}
+
+#bloc_drapeau img
+{
+	border:none;
+	width:15px;
+}
+
+/*
+	bloc filtrage 
+*/
+
+#filtre
+{
+	text-align:right;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:10px;
+
+}
+
+/*
+	contenu
+*/
+
+.event_contact
+{
+	font-style:italic;
+	font-size:0.9em;
+	vertical-align: middle;
+	text-align:right;
+	clear:right;
+	margin-left:75px;
+}
+
+.event_description
+{
+	margin-top:0px;
+	font-size:1em;
+}
+
+.event_date
+{
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-top:5px;
+	font-size:1.1em;
+		margin-left:75px;
+}
+
+.event_date .date
+{
+	font-weight:bold;
+}
+
+.event_contact img
+{
+	border:none;
+	margin-left:3px;
+		vertical-align: middle;
+}
+
+#liste_evenement
+{
+	padding-right:5px;
+	padding-left:5px;
+	padding-top: 5px;
+}
+
+#liste_evenement .event_description
+{
+	margin-left:75px;
+}
+
+#liste_evenement a 
+{
+
+}
+
+.symbole
+{
+	float:left;
+	padding-right: 4px;
+}
+
+.event_image 
+{
+	float:right; 
+	margin:3px; 
+}
+
+/*
+	Pagination 
+*/
+
+.contient_pagin
+{
+	height:22px;
+	margin-bottom: 5px;
+}
+
+.pagination
+{
+	float:right;
+	padding:3px;
+	margin:0px 0px 4px;
+	font-size:0.9em;
+}
+
+
+/*
+	Style générique
+*/
+
+.gras
+{
+	font-weight:bold;
+}
+
+
+/*
+	Annonce 
+*/
+
+#annonce
+{
+	text-align:center;
+	padding:5px;
+}
+
+#annonce img
+{
+	border:none;
+}
+

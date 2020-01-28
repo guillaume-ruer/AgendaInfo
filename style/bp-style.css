@@ -1,0 +1,72 @@
+.bp_relatif input:focus + .bp_proposition
+{
+	display:block; 
+}
+
+.bp_proposition
+{
+	border-bottom:1px solid black;
+	border-right:1px solid black;
+	position:absolute; 
+	top:24px; 
+	left:0px; 
+	background:#EEEEEE; 
+	max-height:200px;
+	overflow:auto;
+	display:none; 
+	color:black;
+	z-index:1;
+}
+
+.bp_proposition:hover
+{
+	display:block; 
+}
+
+.bp_proposition > span 
+{
+	display:block; 
+	padding:3px; 
+}
+
+.bp_proposition > span:hover
+{
+	background-color:#BBBBFF; 	
+}
+
+.bp_relatif
+{
+	position:relative;  
+	display:inline-block;
+}
+
+.bp_choi
+{
+	display:inline-block;
+	border-radius:5px; 
+	border:1px solid black; 
+	margin:2px; 
+	padding:2px; 
+	height:20px; 
+}
+
+.bp_choi a
+{
+	display:inline-block; 
+	border:1px solid black;
+	border-radius:5px; 
+	height:17px; 
+	padding:1px; 
+	text-decoration:none;
+	width:20px;
+	text-align:center;
+	margin-left:5px;
+}
+
+.bp_choi a:hover
+{
+	background-color:white; 
+	color:black;
+	cursor:pointer;
+}
+

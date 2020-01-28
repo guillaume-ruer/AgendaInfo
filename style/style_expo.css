@@ -1,0 +1,18 @@
+img
+{
+	border:none;
+}
+
+.les_expos
+{
+	margin: 10px 0px 10px 20px;
+	text-align: center;
+	width: 120px;
+	border:thin solid #FFFFFF;
+}
+.texte_expos
+{
+	margin: 0px;
+	text-align: center;
+	padding: 5px;
+}

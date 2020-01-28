@@ -1,0 +1,172 @@
+/*
+	Design général
+*/
+
+body
+{
+	font-size:12px;
+	font-family : arial, verdana, sans-serif;
+	/*ajout fond iframe*/
+	background-color: #fff;	
+}
+
+#liste_evenement hr
+{
+	height:1px;
+	border:none;
+}
+
+/*
+	bandeau supérieur 
+*/ 
+
+#bloc_drapeau 
+{
+	float:right;
+}
+
+#bloc_drapeau img
+{
+	border:none;
+	width:15px;
+}
+
+/*
+	bloc filtrage 
+*/
+
+#filtre
+{
+	text-align:right;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:10px;
+
+}
+
+/*
+	contenu
+*/
+.event_titre
+{	
+	/*ajout couleur titre*/
+	color: #a13200;
+}
+.event_contact
+{	
+	/*ajout couleur autres dates*/
+	color: #000;
+	font-style:italic;
+	font-size:0.9em;
+	vertical-align: middle;
+	text-align:right;
+	clear:right;
+}
+
+.event_description
+{
+	margin-top:0px;
+	font-size:1em;
+}
+
+.event_date
+{
+	/*ajout couleur date et titre*/
+	color: #cc9d26;
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-top:5px;
+	font-size:1.1em;
+}
+
+.event_date .date
+{
+	font-weight:bold;
+}
+
+.event_contact img
+{
+	border:none;
+	margin-left:3px;
+		vertical-align: middle;
+}
+
+#liste_evenement
+{
+	padding-right:5px;
+	padding-left:5px;
+	padding-top: 5px;
+}
+
+#liste_evenement .event_description
+{
+	margin-left:35px;
+}
+
+#liste_evenement a 
+{
+	/*ajout couleur autres dates*/
+	color: #a13200;
+}
+
+.symbole
+{
+	float:left;
+	padding-right: 4px;
+}
+.pagination a {
+	/*numero pages*/
+		color: #000;
+font-size: 1.1em;
+}
+
+.event_image 
+{
+	float:right; 
+	margin:3px; 
+}
+
+/*
+	Pagination 
+*/
+
+.contient_pagin
+{
+	height:22px;
+	margin-bottom: 5px;
+}
+
+.pagination
+{
+	float:right;
+	padding:3px;
+	margin:0px 0px 4px;
+	font-size:0.9em;
+}
+
+
+/*
+	Style générique
+*/
+
+.gras
+{
+	font-weight:bold;
+}
+
+
+/*
+	Annonce 
+*/
+
+#annonce
+{
+	text-align:center;
+	padding:5px;
+}
+
+#annonce img
+{
+	border:none;
+}
+

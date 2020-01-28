@@ -1,0 +1,1267 @@
+/*
+	Design général
+*/
+
+html
+{
+	background-color: #f0f0f0;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#liste a:hover, #bl_droite a:hover
+{
+	text-decoration:none;
+}
+
+#liste a, #bl_droite a
+{
+	color:black;
+}
+
+/*
+	Pieds de page 
+*/
+
+#contient_logo img
+{
+	border:none;
+}
+
+#contient_logo
+{
+	text-align:center;
+	padding-top: 3px;
+	vertical-align:top;
+}
+
+#contient_logo
+{
+	
+}
+
+#pieds_de_page
+{
+	text-align:center;
+	font-size:1em;
+	font-weight: normal;
+}
+
+#pieds_de_page a
+{
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+
+#pieds_de_page a 
+{
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 2px 2px 2px 2px;
+	color: #000;
+	display: inline-block;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	background-attachment: scroll;
+	background-color: #fff;
+	background-repeat: repeat;
+	background-position: 0 0;
+	padding-top: 8px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.10);
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+#pieds_de_page a:hover
+{
+	color: #ffffff;
+	background-color: #8d8899;
+	box-shadow: 0 1px 1px rgba(0,0,0,.20);
+	text-decoration: none;
+}
+
+/*
+	Développement
+
+*/
+
+#dev 
+{
+	margin-top:400px;
+}
+
+.lien_cache
+{
+	position:absolute;
+	background-color:white; 
+	width:160px; 
+	margin-top:-3px; 
+	padding-bottom:10px; 
+	padding-top:10px; 
+	max-height:400px; 
+	overflow:auto;
+}
+
+.lien_declencheur 
+{
+	padding-right:10px; 
+}
+
+.bloc, #bl_event
+{
+	background-color: #FFF;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.10);
+	padding: 20px;
+}
+
+body
+{
+	overflow-y:scroll;
+	overflow-x:hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+#bl_page
+{
+	margin-top:5px;
+}
+
+#banderol img
+{
+	width:100%;
+	max-height:200px; 
+}
+
+.ev_desc
+{
+	text-align:justify;
+}
+
+/*
+	En dessous de 700px
+*/
+
+@media screen and (max-device-width: 700px) 
+{
+	#cal_mode
+	{
+		display:none;
+	}
+
+	.event_contenu h2
+	{
+		margin-top:0px;  
+	}
+
+	.event_contenu
+	{
+		margin-left:25px; 
+	}
+
+	.ev-cat-img
+	{
+		width:60px; 
+		height:60px; 
+	}
+
+	.evenement .event_cg
+	{
+		float:left;
+		width:66px; 
+	}
+.ev-visuel {
+	float: none;
+	margin: 4px;
+	visibility: hidden;
+	height: -1000px;
+	position: absolute;
+}
+	#sel_date
+	{
+		background-color:#c35829; 
+		border:1px solid #8d8899; 
+		
+		margin-bottom:4px;
+		margin-right:3px; 
+	}
+
+	#liste_selection, #sel
+	{
+		display:none;
+	}
+
+	.bl_cal_redui
+	{
+		display:none;
+	}
+
+	.bl_cal_etendu
+	{
+		display:block; 
+	}
+
+	body
+	{
+		width:100%; 
+	}
+
+	html
+	{
+		width:100%; 
+	}
+
+	#bl_page
+	{
+		width:100%; 
+	}
+
+	#pos_cal
+	{
+		float:right; 
+		width:185px; 
+		position:relative;
+	}
+
+	#pos_fix_cal
+	{
+		position:fixed;
+		width:185px;
+		z-index:99; 
+	}
+
+	#bl_cal
+	{
+		background:white; 
+		width:185px; 
+		float:right; 
+	}
+
+	.passe
+	{
+		display:none; 
+	}
+
+	#cal_mois
+	{
+		overflow:auto; 
+	}
+	
+	.mois-nom
+	{
+		text-align:center;
+		font-weight:bold; 
+	}
+
+	.mois-nom:first-letter
+	{
+		text-transform:capitalize; 
+	}
+
+	.mois
+	{
+		border:1px solid black; 
+		margin-left:5px; 
+		margin-top:5px; 
+		width:140px; 
+		padding:5px; 
+	}
+
+	.jour
+	{
+		border-top:1px solid black; 
+	}
+
+	.we
+	{
+		background:rgba(100,100,100,0.5);
+	}
+
+	.bt_jr
+	{
+		min-height:20px; 
+		display:inline-block;
+		color:black; 
+	}
+
+	.bt_jr:hover
+	{
+		cursor:pointer;
+		background:#da6c00; 
+	}
+
+	.nbe, .nbs, .jl, .num
+	{
+		display:inline-block;
+		vertical-align:top; 
+	}
+
+	.jl
+	{
+		width:8px; 
+		text-align:center; 
+		padding:2px; 
+		padding-right:4px; 
+	}
+
+	.jour_sep
+	{
+		border-left:1px solid black; 
+		min-height:20px;
+		display:inline-block;
+	}
+
+	.num
+	{
+		width:13px; 
+		text-align:center; 
+		padding:2px; 
+	}
+
+	.nbe
+	{
+		padding:2px; 
+		width:18px; 
+		font-style:italic;
+	}
+
+	.nbs
+	{
+		width:70px;
+	}
+
+	#sel_zone, #sel_date
+	{
+	display: inline-block;
+	vertical-align: top;
+	background-color: #8d8899;
+	padding: 4px;
+	text-align: center;
+	width: 100%;
+	}
+
+#planning
+{
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	height: 60px;
+	vertical-align: top;
+	padding: 5px;
+	background-color: #8d8899;
+	width: 100%;
+	text-align: center;
+}
+	#bt_agenda_classique
+	{
+		height:60px; 
+		display:block;
+		vertical-align:top;
+		background-color:#8d8899; 
+		padding:4px;
+	}
+
+	#bt-aide, #bt-adhesion
+	{
+		display:none;
+	}
+
+	.remarquable
+	{
+		padding:10px; 
+	}
+
+	.rem-col-gauche
+	{
+		float:left; 
+		width:20px; 
+	}
+
+	.rem-col-gauche img
+	{
+		width:100%; 
+	}
+
+	.rem-centre
+	{
+		margin-left:30px; 	
+	}
+
+	.rem-centre h2
+	{
+		margin-top:0px; 	
+	}
+
+	.rem-col-gauche
+	{
+		margin:2px; 
+	}
+
+	.rem-contact
+	{
+		margin-top:10px; 
+		text-align:right;
+		font-style:italic; 
+	}
+
+}
+
+
+
+/* 
+	Au dessus de 700px
+*/
+
+@media screen and (min-device-width: 700px) 
+{
+
+	#bl-bandeau .block
+	{
+		display:inline-block; 
+		height:60px; 
+		vertical-align:top;
+		padding:4px;
+		background-color:#8d8899; 
+	}
+
+
+	#bt-aide
+	{
+		width:110px;
+		background-repeat:no-repeat;
+		background-image:url('http://info-limousin.com/img/planning/interrogation.png');
+		background-position:10px center;
+	}
+
+
+	#bt-adhesion
+	{
+		width:100px;
+		background-repeat:no-repeat;
+		background-image:url('http://info-limousin.com/img/planning/exclamation.png');
+		background-position:10px center;
+	}
+
+	#bt-aide-txt
+	{
+		display:inline-block;
+		background-repeat:no-repeat;
+		margin-top:15px; 
+		margin-left:40px; 
+		
+	}
+
+	#bt-adhesion-txt
+	{
+		display:inline-block;
+		background-repeat:no-repeat;
+		margin-top:8px; 
+		margin-left:40px; 
+		
+	}
+
+	#sel_zone
+	{
+		background-image:url('http://info-limousin.com/img/planning/titre_cibler.png');
+		background-repeat:no-repeat;
+		background-position:bottom;
+		width:300px;
+		text-align:center;
+	}
+
+	.bl_cal_redui
+	{
+		display:block;
+	}
+
+	.bl_cal_etendu
+	{
+		display:block; 
+	}
+
+	.event_contenu
+	{
+		margin-left:80px; 
+	}
+
+	.evenement .event_cg
+	{
+		float:left;
+		width:70px; 
+	}
+
+	body
+	{
+		max-width:1200px;
+		margin:auto; 
+	}
+
+	#liste_theme
+	{
+		background-image:url('http://info-limousin.com/img/planning/titre_themes.png');
+		padding-left:90px;
+		background-position:0px 10px;	
+		background-repeat:no-repeat;
+	}
+
+	#bl_bt
+	{
+		display:inline-block;
+		vertical-align:top; 
+		border:2px solid transparent;
+	}
+
+	#sel
+	{
+		display:inline-block; 
+		background-color:rgba(255,255,255,0.5);
+		padding:10px; 
+		font-size:110%; 
+		margin-right:2px; 
+	}
+
+	#liste_proposition .bt_ajouter
+	{
+		width:64px; 
+		height:64px;
+		display:block; 
+		background-image:url('http://info-limousin.com/img/planning/bouton_plus_a-64.png'); 
+	}
+
+	#liste_proposition .bt_ajouter:hover
+	{
+		cursor:pointer;
+		background-image:url('http://info-limousin.com/img/planning/bouton_plus_b-64.png'); 
+	}
+
+	#sel_date
+	{
+		display:none;
+	}
+
+	#bl_page
+	{
+		margin-right:195px; 
+	}
+
+	#titre_cal
+	{
+		background-image:url('http://info-limousin.com/img/planning/titre_calendrier.png');
+		background-repeat:no-repeat;
+		background-position:center;
+		height:25px;
+	}
+
+	#pos_cal
+	{
+		float:right; 
+		width:185px; 
+		position:relative;
+	}
+
+	#pos_fix_cal
+	{
+		position:fixed;
+		width:185px;
+		z-index:99; 
+	}
+
+	#bl_cal
+	{
+		background:white; 
+		overflow:hidden; 
+		width:185px; 
+		float:right; 
+	}
+
+	.bl_cal_redui .passe
+	{
+		display:none; 
+	}
+
+	#cal_mode
+	{
+		float:left; 
+		margin:2px;
+		cursor:pointer;
+	}
+
+	#cal_menu
+	{
+		min-height:40px; 
+	}
+
+	#cal_menu_bt
+	{
+		overflow:hidden; 
+		text-align:right; 
+	}
+
+	#cal_mois
+	{
+		overflow:auto; 
+	}
+
+	.mois-nom
+	{
+		text-align:center;
+		font-weight:bold; 
+	}
+
+	.mois-nom:first-letter
+	{
+		text-transform:capitalize; 
+	}
+
+	.mois
+	{
+		border:1px solid black; 
+		margin-left:5px; 
+		margin-top:5px; 
+		padding:5px; 
+		width:140px; 
+	}
+
+	.jour
+	{
+		border-top:1px solid black; 
+	}
+
+	.we
+	{
+		background:rgba(100,100,100,0.3);
+	}
+
+	.bt_jr
+	{
+		min-height:20px; 
+		display:inline-block;
+		color:black; 
+	}
+
+	.bt_jr:hover
+	{
+		cursor:pointer;
+		background:#da6c00; 
+	}
+
+	.nbe, .nbs, .jl, .num
+	{
+		display:inline-block;
+		vertical-align:top; 
+	}
+
+	.jl
+	{
+		width:8px; 
+		text-align:center; 
+		padding:2px; 
+		padding-right:4px; 
+	}
+
+	.jour_sep
+	{
+		border-left:1px solid black; 
+		min-height:20px;
+		display:inline-block;
+	}
+
+	.num
+	{
+		width:13px; 
+		text-align:center; 
+		padding:2px; 
+	}
+
+	.nbe
+	{
+		padding:2px; 
+		width:18px; 
+		font-style:italic;
+	}
+
+	.nbs
+	{
+		width:70px;
+	}
+
+	.remarquable
+	{
+		padding:10px; 
+	}
+
+	.rem-col-gauche
+	{
+		float:left; 
+		width:80px; 
+	}
+
+	.rem-centre
+	{
+		margin-left:90px; 	
+	}
+
+	.rem-centre h3
+	{
+		
+	}
+
+	.rem-col-gauche
+	{
+		margin:2px; 
+	}
+
+	.rem-contact
+	{
+		margin-top:10px; 
+		text-align:right;
+		font-style:italic; 
+	}
+
+
+}
+
+/*
+	Calendrier fin 
+*/ 
+
+
+#map
+{
+	height:350px; 
+}
+
+.ui-autocomplete
+{
+	max-height:300px;
+	overflow-y:scroll;
+	overflow-x:hidden; 
+}
+
+#liste
+{
+	margin-top:10px; 
+	border: 2px solid transparent;
+}
+
+.liste
+{
+	min-height:300px;
+}
+
+#prop, #lr
+{
+	display:inline-block; 
+	background-color:rgba(255,255,255,0.5);
+	padding:10px; 
+	font-size:110%; 
+	margin-right:2px; 
+}
+
+#prop:hover, #sel:hover
+{
+	background-color:white; 
+	cursor:pointer; 
+}
+
+#liste_theme
+{
+	margin-top:5px; 	
+	border:2px solid transparent;
+	display:inline-block;
+	vertical-align:top; 
+}
+
+.theme
+{
+	display:inline-block;
+	text-align:center;
+	vertical-align:top; 
+	cursor:pointer;
+}
+
+
+.theme label
+{
+	cursor:pointer;
+}
+
+.theme_img
+{
+	display:inline-block;
+	width:40px; 
+	height:40px; 
+}
+
+.theme img
+{
+	width:100%; 
+	height:100%; 
+}
+
+.dsel
+{
+	background-color: #8d8899;
+}
+
+.dprov
+{
+	background:#da6c00; 
+}
+
+.evenement
+{
+	background:white;
+	padding:5px; 
+	margin-bottom:2px; 
+}
+
+.event_num
+{
+	border-radius:30px; 
+	width:60px; 
+	height:60px;
+	display:block; 
+	font-size:30px; 
+	line-height:55px; 
+	text-align:center; 
+	background-color:#8C8C8C;
+	color:white;
+}
+
+.selection
+{
+	display:inline-block;
+	width:19px;
+	height:19px;
+	text-align:center; 
+	border-radius:10px; 
+	border:1px solid black; 
+	line-height:20px;
+	font-weight:bold;
+}
+
+.date-retire
+{
+	border:1px solid red; 
+	cursor:pointer; 
+	background:red;
+}
+
+.date-ajoute
+{
+	border:1px solid green; 
+	background:green;
+	cursor:pointer; 
+}
+
+#barre_central
+{
+	margin-top:4px; 
+}
+
+.barre_filtre
+{
+	background-color:white;
+	margin-bottom:0px;
+	padding:10px;
+}
+
+.barre_filtre span
+{
+	border:1px solid black; 
+	padding:2px; 
+	border-radius:4px; 
+	display:inline-block; 
+}
+
+.barre_filtre a
+{
+	display:inline-block; 
+	border:1px solid black; 
+	border-radius:4px; 
+	padding:2px; 
+}
+
+.barre_filtre a:hover
+{
+	cursor: pointer;
+	background-color: #8d8899;
+}
+
+#pied_prop
+{
+	text-align:center; 
+}
+
+#pied_lr
+{
+	text-align:center; 
+}
+
+#bt_plus_lr
+{
+	height:40px; 
+	width:100%; 
+}
+
+#bt_plus_ev
+{
+	width:100%; 
+	height:40px; 
+}
+
+.actuel
+{
+	background-color: #d55f2d;
+}
+
+#preload
+{
+	display:none;
+}
+
+.ev_contact
+{
+	font-style:italic;
+	text-align:right; 
+	clear:both;
+}
+
+#bl-pied-page
+{
+	margin-top:50px; 
+}
+
+.fen-aide a
+{
+	color:black;
+	font-weight:bold;
+}
+
+.fen-aide a:hover
+{
+	cursor:pointer;
+}
+
+#bl-bandeau a
+{
+	font-weight:bold;
+	color:black; 
+}
+
+a.block:hover
+{
+	border: 1px solid #000;
+}
+
+.italic
+{
+	font-style:italic;
+}
+
+.ev-visuel
+{
+	float: right;
+	margin: 4px;
+	border: 1px solid #cdcad5;
+}
+
+.block
+{
+	border:1px solid #8d8899; 
+	border-radius:1px; 
+	margin-bottom:4px; 
+	margin-right:3px; 
+}
+
+#bt_agenda_classique
+{
+	width:150px;
+	text-decoration:none;
+}
+
+#bt_ac_img
+{
+	height:83px; 
+	width:84px;
+	position:relative;
+	top:-12px;
+	display:inline-block;
+	vertical-align:top; 
+	background-image:url('http://info-limousin.com/img/planning/agenda_classique.png');
+}
+
+#bt_ac_txt
+{
+	display:inline-block;
+	margin-left:5px;
+	margin-top:15px;
+	width:40px;
+}
+
+#ch_lieu
+{
+	width:120px;
+}
+
+#planning
+{
+	position:relative;
+	top:-2px; 
+	display:inline-block; 
+	height:60px; 
+	vertical-align:top;
+	padding:5px;
+	background-color:#8d8899; 
+
+}
+
+#planning:hover
+{
+	cursor:pointer; 
+}
+
+#bt_planning_img
+{
+	height: 66px;
+	width: 66px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background-image: url(http://info-limousin.com/img/planning/cible.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#bt_planning_txt
+{
+	display: inline-block;
+	width: 82px;
+	margin-top: 10px;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.bouton_menu
+{
+	background-color: #b3afbc;
+	margin: 3px;
+	display: inline-block;
+	height: 20px;
+	border-radius: 5px;
+	padding: 3px;
+	vertical-align: middle;
+	cursor: pointer;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 12px;
+}
+
+.bouton_menu:hover
+{
+	border-right:1px solid transparent; 
+	border-bottom:1px solid transparent; 
+}
+
+.date_masquer
+{
+}
+
+.date_afficher
+{
+
+}
+
+.date_valider
+{
+	color:white;
+	line-height:20px;
+}
+
+.rond_rouge
+{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	border-radius:10px;
+	vertical-align:middle;
+	background-color:red;
+}
+
+.rond_vert
+{
+	width:20px;
+	height:20px;
+	border-radius:10px;
+	display:inline-block;
+	background-color:green; 
+	vertical-align:middle;
+
+}
+
+.couleur_marque
+{
+	color:#ffffff;
+}
+
+#bl_exor_site
+{
+	display:inline-block;
+	vertical-align:top;
+	color:black;
+	background:white;
+	padding:4px;
+}
+
+#bl_exor_site img
+{
+	transition-duration: 5s; 
+	transition-property: transform;
+}
+
+#bl_exor_site:hover img
+{
+	transform:rotate(180deg);
+}
+
+#bl_exor_site img
+{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+#exor_site_txt
+{
+	vertical-align:middle;
+	display:inline-block;
+	text-align:left;
+}
+
+#liste_lr
+{
+	background: white;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/*
+	Transformation liste 
+*/
+
+#liste_proposition .event_num, 
+#liste-proposition .bt_retire,
+#liste-proposition .gestion_date
+{
+	display:none; 
+}
+
+#liste_proposition .voir_date
+{
+	display:inline-block;
+	width:154px;
+	height:21px;
+	background-image:url('http://info-limousin.com/img/planning/bouton_voir_date_a.png');
+	background-repeat:no-repeat;
+	vertical-align:middle;
+}
+
+#liste_proposition .voir_date:hover
+{
+	background-image:url('http://info-limousin.com/img/planning/bouton_voir_date_b.png');
+}
+
+#liste_selection .bt_ajouter
+{
+	display:none; 
+}
+
+#liste_selection .bt_retire
+{
+	width:64px; 
+	height:64px;
+	display:block; 
+	background-image:url('http://info-limousin.com/img/planning/bouton_moins_a-64.png'); 
+}
+
+#liste_selection .bt_retire:hover
+{
+	cursor:pointer;
+	background-image:url('http://info-limousin.com/img/planning/bouton_moins_b-64.png'); 
+}
+
+#liste_selection .gestion_date
+{
+	display:inline-block;
+	width:154px;
+	height:21px;
+	background-image:url('http://info-limousin.com/img/planning/bouton_gestion_a.png');
+	background-repeat:no-repeat;
+	vertical-align:middle;
+}
+
+#liste_selection .gestion_date:hover
+{
+	background-image:url('http://info-limousin.com/img/planning/bouton_gestion_b.png');
+}
+
+/*
+	Pagination 
+*/
+
+.pagin-prop
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color : #000;
+	padding-left: 0px;
+	line-height: 30px;
+	font-size: 1.3em;
+	font-weight: bold;
+	background-color: #FFF;
+}
+
+.pagin-prop a
+{
+	display:inline-block;
+	text-decoration: none;
+	margin-left:2px;
+	margin-bottom: 2px;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+.pagin-prop a.actif
+{
+	background: #8d8899;
+	color: #FFF;
+}
+
+.pagin-prop a:hover
+{
+	background:#8d8899;
+	color: #FFF;
+}
+

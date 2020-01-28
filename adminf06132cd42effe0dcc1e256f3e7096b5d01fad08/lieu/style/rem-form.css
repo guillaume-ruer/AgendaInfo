@@ -1,0 +1,12 @@
+.rem-groupe
+{
+	display:inline-block; 
+	text-align:center; 
+	margin-left:5px; 
+}
+
+#rem-form
+{
+	width:800px; 
+	margin:auto; 
+}

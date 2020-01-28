@@ -1,0 +1,39 @@
+.fixe
+{
+	width:1000px; 
+	margin:auto; 
+}
+
+.message_erreur
+{
+
+	background:red;
+}
+
+[data-tip] 
+{ 
+        position: relative;
+        cursor: help;
+        border-bottom: 1px dotted #aaa;
+	font-size:110%;
+}
+
+[data-tip]:hover:after 
+{
+        content: attr(data-tip); 
+        position: absolute;
+        top: 0;  
+        left: 1.5em;
+        white-space: pre; 
+        padding: 5px 10px;
+        background: #E69B00;
+        color: #fff;
+}	
+
+a
+{
+	text-decoration:underline;
+	color: #990000;
+	font-weight: bold;
+}
+

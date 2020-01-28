@@ -1,0 +1,92 @@
+#debug
+{
+	z-index:999;
+	top:0px; 
+	left:0px; 
+	position:fixed; 
+	border:1px solid black; 
+	background:black; 
+	color:white; 
+}
+
+#debug > div
+{
+	width:800px; 
+	height:600px; 
+	overflow:auto; 
+	display:none; 	
+}
+
+#debug:hover > span
+{
+	display:block;
+	border-bottom:2px solid white; 
+}
+
+#debug:hover > div
+{
+	display:block; 	
+}
+
+#debug_stat
+{
+	position:absolute;
+	top:0px; 
+	left:30px; 
+}
+
+.debug_err
+{
+	border:1px dashed white; 
+	padding:2px; 
+	margin:2px; 
+	white-space: pre-wrap; 
+}
+
+.debug_onglet
+{
+	padding-top:5px;
+	display:inline;
+}
+
+.debug_onglet .debug_titre
+{
+	display:inline-block;
+	min-width:100px; 
+	border-top:1px solid white;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	text-align:center;
+	height:30px; 
+
+}
+
+.debug_onglet:hover .debug_titre
+{
+	background:white;
+	color:black; 
+}
+
+.debug_onglet .debug_feuille
+{
+	display:none; 
+	position:absolute; 
+}
+
+.debug_onglet:hover .debug_feuille
+{
+	display:block; 
+	overflow:auto;
+	width:800px; 
+	height:560px; 
+}
+
+.debug_sql_err
+{
+	background:red; 
+}
+
+.debug_sql
+{
+	white-space: pre-wrap; 
+}

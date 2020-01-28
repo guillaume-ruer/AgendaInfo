@@ -1,0 +1,152 @@
+<?php
+
+/*
+	Fichier d'initialisation, appeler en premier sur chaque fichier du site
+	Par StrateGeyti
+*/
+
+//Afin de calculer le temps de génération de la page 
+define('TPS', microtime(TRUE) );
+
+//Affichage des erreur php
+error_reporting(E_ALL);
+
+//Afin de pouvoir utiliser les SESSION, pour les connexion
+session_start();
+
+//constante de serveur
+define('EN_LOCAL', $_SERVER['HTTP_HOST'] == 'localhost'); 
+define('ADD_SITE', ( EN_LOCAL ? 'http://localhost/site/infolimo2/' : 'http://'.$_SERVER['HTTP_HOST'].'/' ) );
+
+//Recherche du nombre de retour dossier à effectué pour revenir à la racine, depuis le fichier apelant. 
+$debug = debug_backtrace();
+$nbst = substr_count( $debug[0]['file'] , '/') + 1 - substr_count( __FILE__ , '/');
+
+if($nbst < 0 ) 
+{
+	//Si c'est négatif, y'a un problème ! 
+	exit('Problème de configuration du site.');
+}
+else
+{
+	//Sinon, on défini la constante RETOUR
+	define('RETOUR', str_repeat('../', $nbst ) );
+}
+
+//Définition de constantes de chemin
+define('C_STYLE', RETOUR.'style/');
+define('C_DOS_PHP', RETOUR.'dos-php/');
+define('C_INC', RETOUR.'include/');
+define('C_PATRON', RETOUR.'patron/');
+define('C_ADMIN', RETOUR.'adminf06132cd42effe0dcc1e256f3e7096b5d01fad08/');
+define('C_JAVASCRIPT', RETOUR.'javascript/');
+
+define('HAUT', C_PATRON.'haut.php');
+define('BAS', C_PATRON.'bas.php');
+
+define('C_IMG', 'http://info-limousin.com/img/');
+define('C_DESIGN', C_IMG.'design/');
+define('C_BOUTON', C_IMG.'bouton/');
+
+//Constantes de droit 
+define('NB_DROIT', 4 ); 
+
+define('ADMIN',	0x1);
+define('PURGE', 0x2);
+define('CHANGER_FOND', 0x2);
+define('VOIR_UTILISATEUR', 0x4 ); 
+
+/*
+	Fonctions souvent utilisé. 
+*/
+include C_INC.'fonc.php';
+include C_INC.'fonc_sql.php';
+include C_INC.'fonc_infolimo.php'; 
+
+//Variable de configuration
+include C_INC.'conf.php'; 
+
+try
+{
+	$BDD= new PDO('mysql:host='.$host.';dbname='.$bdd, $utilisateur , $mdp );
+}
+catch (Exception $e)
+{
+        die('Erreur : ' . $e->getMessage());
+}
+
+//On les supprime juste au cas où.
+unset($host, $bdd, $utilisateur, $mdp); 
+
+//On indique au serveur de base de donnée que nos retour doivent être en utf8
+$BDD->query('SET NAMES utf8'); 
+
+//Définition des constantes de configuration
+define('NOM_SITE', $nom_site);
+
+/*
+	Gestion des connexions 
+*/
+
+include RETOUR.'membre/include/membre_class.php';
+$MEMBRE = new membre;
+
+if(isset($_GET['dec']) )
+{
+	$MEMBRE->deconnexion(); 
+}
+elseif(isset($_POST['mdp'], $_POST['pseudo']) )
+{
+	$MEMBRE->connexion($_POST['pseudo'], $_POST['mdp']);
+}
+else
+{
+	$MEMBRE->session(); 
+}
+
+define('CONNECTE', $MEMBRE->connecte );
+define('ID', $MEMBRE->id );
+define('DROIT', $MEMBRE->droit );
+
+/*
+	Include automatique des fichiers 'init_module.php'
+	( en partant de la racine vers le dossier actuel) 
+*/
+
+$nbs = substr_count( RETOUR, '/');
+
+for($i = $nbs-1; $i >= 0; $i-- )
+{
+	$inclure = str_repeat('../', $i ).'include/init_module.php';
+
+	if(file_exists($inclure) )
+	{
+		include $inclure;
+	}
+}
+
+/*
+	Gestion des variable d'environement pour les langues
+	( Je laisse l'embryon au cas où... 
+*/
+
+
+//Récupération de l'id de langue. 
+$l = 1;
+if(isset($_GET['l']) ) 
+{
+	$tab_langue = array(1=>'FR', 2=>'EN' ); 
+	$l = ($cle = array_search($_GET['l'], $tab_langue) ) ? $cle : (int) $_GET['l'] ; 
+}
+elseif(isset($_POST['l']) )
+	$l = (int)$_POST['l']; 
+
+define('CODE_LANGUE', langue($l) );
+setlocale(LC_ALL, CODE_LANGUE); 
+putenv('LANG='.CODE_LANGUE); 
+putenv('LANGUAGE='.CODE_LANGUE); 
+define('ID_LANGUE', $l) ;
+
+//Inclusion du fichier de langue. 
+$tab_fichier_langue = array(1 => 'francais.php', 2 => 'english.php' );  
+include RETOUR.'lang/'.( ( isset($tab_fichier_langue[ $l ]) ) ? $tab_fichier_langue[ $l ] : $tab_fichier_langue[ 1 ] ) ; 

@@ -1,0 +1,667 @@
+/*
+	Affichette 
+*/
+
+
+.affichette img
+{
+	border: none;
+	margin-bottom: 5px;	
+}
+
+.affichette a
+{
+	font-size:90%;
+	color: #000;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+#afficher_affichette
+{
+	float:right;
+
+}
+
+#afficher_affichette img
+{
+	border:none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*
+	Filtre
+*/
+
+#fond_filtre, #fond_aff
+{
+	display: block;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+
+#nf_2
+{
+	height:70px; 
+}
+
+.num_form
+{
+	float:left;
+}
+
+#formulaire p
+{
+	width: 100%;
+	padding-top:2px;
+	text-align: left;
+}
+
+
+
+
+
+#lien_rss
+{
+	text-align: left;
+	vertical-align: middle;
+	font-size: 1em;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#lien_rss a
+{
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 2px 2px 2px 2px;
+	color: #8d8899;
+	display: inline-block;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+	background-attachment: scroll;
+	background-color: #fff;
+	background-repeat: repeat;
+	background-position: 0 0;
+	padding-top: 8px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0);
+	margin-right: 2px;
+	margin-left: 2px;
+	border: thin solid #333;
+}
+
+.bouton
+{
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 2px 2px 2px 2px;
+	color: #000;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 200px;
+	height: 28px;
+	background-attachment: scroll;
+	background-color: #fff;
+	background-repeat: repeat;
+	background-position: 0 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0);
+	border: thin solid #000;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	margin-right: 2px;
+}
+#lien_rss a:hover
+{
+	color: #ffffff;
+	background-color: #8d8899;
+	box-shadow: 0 1px 1px rgba(0,0,0,0);
+	text-decoration: none;
+}
+.bouton:hover
+{
+	color: #ffffff;
+	background-color: #8d8899;
+box-shadow: 0 1px 1px rgba(0,0,0,0);
+	text-decoration: none;
+}
+
+#lien_rss span
+{
+	color : #fff;
+	font-size:1.1em;
+	font-weight: bolder;
+}
+
+#info_gauche
+{
+	float: left;
+	vertical-align: middle;
+	text-align: center;
+	height: 250px;
+}
+
+#fond_filtre img
+{
+	border:none;
+}
+
+#DateDeb_trigger:hover
+{
+	border:1px solid red;
+	width:18px;
+	height:12px;
+}
+
+/*
+	colonne de droite 
+*/
+
+#contenu_droite
+{
+	width:300px;
+	padding-left:4px;
+	padding-right:0px;
+	text-align:center;
+	padding-top: 5px;
+	margin-left:700px; 
+}
+
+#contenu_droite img
+{
+	border:none;
+}
+
+.titre_droite
+{
+	margin-top:3px;
+	background-image: url(../img/design/fond_affichette_2013.png);
+	background-repeat: repeat;
+	color:#534133;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:3px;
+	font-weight: bolder;
+	font-variant: small-caps;
+	font-size: 1.1em;
+}
+
+.texte_droite
+{
+	background-image: url(../img/design/fond_affichette_2013.png);
+	background-repeat: repeat;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.visuel_bt span
+{
+	display:block;
+	background-color:#dfcdbb;
+	color : #534133;
+	margin:0px;
+	font-size:0.9em;
+	padding-top:5px;
+	padding-bottom:3px;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+.visuel_bt:hover
+{
+	text-decoration:underline;
+	color : #000000;
+}
+
+.visuel_img
+{
+	float:right;
+}
+
+.visuel_bt a
+{
+	text-decoration:none;
+}
+
+/*
+	contenu
+*/
+
+#bloc_evenement
+{
+	width:100%;
+	padding: 0px;
+}
+
+#liste_evenement
+{
+	width:100%; 
+}
+
+/*
+	Flux limoge 
+*/
+
+#titre_limoges
+{
+	margin-top:3px;
+	background-image: url(../img/design/fond_affichette_2013.png);
+	background-repeat: repeat;
+	color:#534133;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:3px;
+	font-weight: bolder;
+	font-variant: small-caps;
+	font-size: 1.1em;
+}
+
+#titre_limoges a 
+{
+	color:#534133;
+	text-decoration:none; 
+}
+
+#titre_limoges a:hover
+{
+	text-decoration:underline; 
+}
+
+#flux_limoges > div
+{
+	margin-bottom:3px; 
+	background-image: url(../img/design/fond_affichette_2013.png);
+	background-repeat: repeat;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+#flux_limoges a
+{
+	color : #534133;
+}
+
+/* ###  taille téléphone, éléments graphiques par défaut qui changent plus on descend dans le code ##### */
+
+#formulaire
+{
+	float: left;
+	width: 100%;
+	min-height: 200px;
+	vertical-align: left;
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 30px;
+}
+#info_gauche
+{
+	float: left;
+	vertical-align: top;
+	text-align: center;
+	height: 250px;
+	width: 100%;
+
+}
+
+.affichette
+{
+	text-align: center;
+	margin: 1px;
+	float: left;
+	width: 16%;
+	font-size: 0.9em;
+	padding: 5px;
+	height: 0px;
+	background-color: #FFF;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.10);
+	visibility: hidden;
+} 
+.affichette img
+{
+	border: none;
+	margin-bottom: 5px;
+	width: 100%;
+} 
+.md_filtre
+{
+	width:300px;
+    height:23px; 
+}
+label 
+{
+	padding: 3px;
+	float: left;
+	width: 100px;
+	text-align: right;
+	display: block;
+	font-weight: bold;
+	color: #FFF;
+
+}
+	.fixe
+{
+	width:100%;
+	margin:auto;
+}
+.paypal
+{
+	text-align: left;
+	float: none;
+	width: 95%;
+	font-size: 1.1em;
+	background-color: #f37c47;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+/* ##########################  taille tablette portrait ################ */
+
+@media (min-width: 768px) {
+		.fixe
+{
+	width:768px;
+	margin:auto;
+}
+#formulaire
+{
+	float: left;
+	width: 450px;
+	height: 270px;
+	vertical-align: left;
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 2px;
+}
+#info_gauche
+{
+	float: left;
+	vertical-align: middle;
+	text-align: center;
+	height: 270px;
+	width: 310px;
+}
+.affichette
+{
+	text-align: center;
+	margin: 2px;
+	float: left;
+	width: 175px;
+	font-size: 0.9em;
+	padding: 6px;
+	height: 430px;
+	background-color: #FFF;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.10);
+	visibility: visible;
+} 
+.affichette img
+{
+	border: none;
+	margin-bottom: 5px;
+	width: 164px;
+}
+.md_filtre
+{
+	width:400px;
+    height:23px; 
+} 
+label 
+{
+	padding: 3px;
+	float: left;
+	width: 120px;
+	text-align: right;
+	display: block;
+	font-weight: bold;
+	color: #FFF;
+}
+.paypal
+{
+	text-align: left;
+	float: none;
+	width: 95%;
+	font-size: 1.1em;
+	background-color: #f37c47;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#masque
+{
+	z-index:99999999;
+	width:100%;
+	height:1000%;
+	position:absolute;
+	top:0px; 
+	background-color:rgba(0,0,0,0.5); 
+}
+
+#masque-message
+{
+	margin-top:100px; 
+	padding-top:100px; 
+	margin-left:auto;
+	margin-right:auto ;
+	width:50%; 
+	background:white;
+	height:5%; 
+	text-align:center;
+}
+}
+
+/* ##########################   taille tablette paysage ou 1024 ################ */
+
+@media (min-width: 992px) {
+	.fixe
+{
+	width:992px;
+	margin:auto;
+}
+
+#formulaire
+{
+	float: left;
+	width: 580px;
+	min-height: 260px;
+	vertical-align: left;
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 10px;
+}
+#info_gauche
+{
+	float: left;
+	vertical-align: middle;
+	text-align: center;
+	height: 260px;
+	width: 350px;
+}
+.affichette
+{
+	text-align: center;
+	margin: 4px;
+	float: left;
+	width: 223px;
+	font-size: 0.9em;
+	padding: 8px;
+	height: 400px;
+	background-color: #FFF;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.10);
+		visibility: visible;
+}
+.affichette img
+{
+	border: none;
+	margin-bottom: 5px;
+	width: 164px;
+} 
+label 
+{
+	padding: 3px;
+	float: left;
+	width: 150px;
+	text-align: right;
+	display: block;
+	font-weight: bold;
+	color: #666;
+}
+.paypal
+{
+	text-align: left;
+	float: none;
+	width: 95%;
+	font-size: 1.1em;
+	background-color: #f37c47;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+#masque
+{
+	z-index:99999999;
+	width:100%;
+	height:1000%;
+	position:absolute;
+	top:0px; 
+	background-color:rgba(0,0,0,0.5); 
+}
+
+#masque-message
+{
+	margin-top:100px; 
+	padding-top:200px; 
+	margin-left:auto;
+	margin-right:auto ;
+	width:50%; 
+	background:white;
+	height:5%; 
+	text-align:center;
+}
+}
+
+/* ##########################  taille écran PC ################ */
+
+@media (min-width: 1200px) {
+	
+	.fixe
+{
+	width:1000px;
+	margin:auto;
+}
+	
+#formulaire
+{
+	float: left;
+	width: 670px;
+	min-height: 260px;
+	vertical-align: left;
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 10px;
+}
+.affichette
+{
+	text-align: center;
+	margin: 4px;
+	float: left;
+	width: 225px;
+	font-size: 0.9em;
+	padding: 8px;
+	height: 420px;
+	background-color: #FFF;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.10);
+		visibility: visible;
+} 
+#info_gauche
+{
+	float: left;
+	vertical-align: left;
+	text-align: center;
+	height: 260px;
+	width: 320px;
+}
+
+.affichette img
+{
+	border: none;
+	margin-bottom: 5px;
+	width: 164px;	
+}
+
+.paypal
+{
+	text-align: left;
+	float: none;
+	width: 96%;
+	font-size: 1.1em;
+	background-color: #f37c47;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+#masque
+{
+	z-index:99999999;
+	width:100%;
+	height:1000%;
+	position:absolute;
+	top:0px; 
+	background-color:rgba(0,0,0,0.5); 
+}
+
+#masque-message
+{
+	margin-top:100px; 
+	padding-top:200px; 
+	margin-left:auto;
+	margin-right:auto ;
+	width:50%; 
+	background:white;
+	height:5%; 
+	text-align:center;
+}

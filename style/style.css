@@ -1,0 +1,518 @@
+/*
+	Design général
+*/
+html
+{
+	background-color: #f0f0f0;
+	background-repeat: repeat-y;
+	background-position: center top;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(http://www.info-limousin.com/img/design/fond_2018.gif);
+	background-attachment: scroll;
+}
+body
+{
+	
+}
+
+a:hover
+{
+	text-decoration:none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.fond_souligne
+{
+	width:100%;
+
+	clear:both;
+}
+.google
+{
+	width: 100%;
+	clear: both;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin:auto;
+}
+
+
+.aligncenter
+{
+	text-align:center;
+}
+
+/*
+	Liens retour 
+*/
+.retour a 
+{
+	color:#f6561a;
+}
+
+#bouton_retour
+{
+	float:left;
+	color: #000;
+	text-align: left;
+	height: 20px;
+	width: 100%;
+	text-indent: 20px;
+	background-image: url(http://info-limousin.com/img/design/infolimo-flecheb-bj.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	line-height: 19px;
+	vertical-align: middle;
+}
+#bouton_retour img
+{
+	border:none;
+}
+#bouton_retour a
+{
+	color: #000;
+	font-weight: bold;
+}
+
+/*
+	autres dates
+*/
+#texte_description
+{
+	color: #000000;
+	text-align: left;
+	padding: 10px;
+	font-size: 1em;
+}
+#texte_titre
+{
+	color: #000000;
+	text-align: left;
+	padding: 10px;
+	font-size: 1.4em;
+}
+/*
+	bandeau 
+*/
+
+#bandeau
+{
+	font-size:1em;
+	font-weight: bolder;
+	padding-left: 5px;
+	vertical-align: middle;
+	margin: 0px;
+	height: 0px;
+	text-align: center;
+}
+
+
+
+#bandeau a {
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 2px 2px 2px 2px;
+	color: #000;
+	display: inline-block;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	width: 150px;
+	background-attachment: scroll;
+	background-color: #fff;
+	background-repeat: repeat;
+	background-position: 0 0;
+	padding-top: 8px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.10);
+	margin-right: 2px;
+	margin-left: 2px;
+}
+#bandeau a:hover
+{
+	color: #ffffff;
+	background-color: #645a4f;
+box-shadow: 0 1px 1px rgba(0,0,0,.20);
+	text-decoration: none;
+}
+#drapeau
+{
+	float:right;
+}
+
+#drapeau img
+{
+	border:none;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+
+/*
+	contenu
+*/
+
+#bloc_evenement
+{
+	float:left; 
+}
+
+#liste_evenement hr
+{
+	color:#e9ca9c;
+	background-color:#e9ca9c;
+	height:0px;
+	border:none;
+}
+
+#info_filtrage 
+{
+	color: #000;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	padding-left: 0px;
+	font-weight: normal;
+	font-size: 1em;
+	text-align: left;
+}
+
+.texte_contact
+{
+	color : #333333;
+	margin:0px;
+	font-size:0.98em;
+	text-decoration:none;
+	vertical-align: middle;	
+	line-height: 1.4em;
+}
+
+
+.event_contact
+{
+	text-align: right;
+	font-style: italic;
+	clear: right;
+	background-color: #f1f0f2;
+	margin-left: 75px;
+	border-radius: 6px 6px 6px 6px;
+	padding: 3px;
+}
+
+.event_contact img
+{
+	border:none;
+	margin-left:3px;
+	vertical-align: middle;
+}
+
+.event_description
+{
+	margin-top: 0px;
+	padding-left: 10px;
+	padding-top: 5px;
+	line-height: 1.4em;
+}
+
+.event_date
+{
+	margin-bottom:8px;
+	margin-top:0px;
+	padding-top:5px;
+		padding-left: 10px;
+
+}
+
+.event_date:first-letter
+{
+	text-transform: uppercase;
+
+}
+.date
+{
+
+}
+.event_titre
+{
+	font-size: 1em;
+	color: #3b314b;
+}
+#liste_evenement
+{
+
+	width: 100%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#liste_evenement h3 
+{
+	margin-left: 75px;
+	text-align: left;
+}
+
+#liste_evenement .event_description
+{
+	margin-left: 75px;
+	text-align: justify;
+	margin-right: 35px;
+	
+}
+
+#liste_evenement a, .lien_cache a
+{
+	color: #756f84;
+}
+.lien_cache2 a
+{
+	color:#000;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	display: block;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+}
+.lien_cache2 a:hover
+{
+	color:#000;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	text-align: center;
+	background-color: #FFF;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+
+}
+.symbole
+{
+	float:left;
+}
+
+.event_image
+{
+	float: right;
+	margin-top: 3px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-left: 20px;
+}
+
+/*
+	Pagination 
+*/
+
+#pagin_bas
+{
+	border-top:1px solid #dfcf9b; 
+	clear:both;
+}
+
+.pagination
+{
+	margin-top:0px;
+	padding-top:10px;
+	margin-bottom:0px;
+	padding-bottom: 20px;
+	height:50px;
+	color : #000;
+	line-height: 30px;
+	padding-left: 0px;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.pagination a, .pagination .libele
+{
+	display:block;
+	float:left;
+	text-decoration: none;
+	margin-left:2.5px;
+	margin-bottom: 2px;
+	padding-right: 7px;
+	padding-left: 7px;
+	height:20px;
+}
+
+.pagination .actif
+{
+	color : #000;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.10);
+	margin-right: 3px;
+}
+
+.pagination .inactif
+{
+	color : #000;
+
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	background-color: #8d8899;
+		box-shadow: 1px 1px 1px rgba(0,0,0,.10);
+		margin-right: 2.7px;
+}
+
+.pagination .inactif:hover
+{
+	background:white;
+}
+
+
+
+/*
+	Pieds de page 
+*/
+
+#contient_logo img
+{
+	border:none;
+}
+#contient_logo
+{
+	text-align:center;
+	padding-top: 3px;
+}
+
+#pieds_de_page
+{
+	text-align:center;
+		font-size:1em;
+	font-weight: normal;
+}
+#pieds_de_page a
+{
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+
+#pieds_de_page a {
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 2px 2px 2px 2px;
+	color: #000;
+	display: inline-block;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	background-attachment: scroll;
+	background-color: #fff;
+	background-repeat: repeat;
+	background-position: 0 0;
+	padding-top: 8px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 8px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0);
+	margin-right: 2px;
+	margin-left: 2px;
+	border: thin solid #000;
+}
+#pieds_de_page a:hover
+{
+	color: #ffffff;
+	background-color: #8d8899;
+box-shadow: 0 1px 1px rgba(0,0,0,0);
+	text-decoration: none;
+}
+/*
+	Développement
+
+*/
+#dev 
+{
+	margin-top:400px;
+}
+
+.lien_cache
+{
+	position:absolute;
+	background-color:white; 
+	width:160px; 
+	margin-top:-3px; 
+	padding-bottom:10px; 
+	padding-top:10px; 
+	max-height:400px; 
+	overflow:auto;
+}
+
+.lien_declencheur 
+{
+	padding-right:10px; 
+}
+.bloc, #bl_event
+{
+	background-color: #FFF;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.10);
+	padding: 20px;
+}
+#bl_exor_site
+{
+	display:inline-block;
+	vertical-align:top;
+	color:black;
+	background:white;
+	padding:4px;
+}
+
+#bl_exor_site img
+{
+	transition-duration: 5s; 
+	transition-property: transform;
+}
+
+#bl_exor_site:hover img
+{
+	transform:rotate(180deg);
+}
+
+#bl_exor_site img
+{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+#exor_site_txt
+{
+	vertical-align:middle;
+	display:inline-block;
+	text-align:left;
+}

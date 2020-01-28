@@ -1,0 +1,1 @@
+document.write("<iframe src='http://<?php echo $_SERVER['HTTP_HOST'] ?>/strate/externe/", IL_Code ,"/0_0_", IL_Lang ,".html' width='",IL_Largeur,"' height='",IL_Hauteur,"' scrolling='default' frameborder='0'></iframe>");

@@ -1,0 +1,13 @@
+.og_titre
+{
+	border:1px solid black;
+	border-bottom:none; 
+	margin-left:5px; 
+	padding:10px; 
+}
+
+.og_page
+{
+	border:1px solid black; 
+	padding:10px; 
+}
